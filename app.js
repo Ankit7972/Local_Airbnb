@@ -75,7 +75,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/listings", listingsRouter); //we use ROUTES method (it will haldel all routes of listings and middlewares also by using this we have to write this line only)
+app.use("/listings", listingsRouter); //we use ROUTES method (it will handel all routes of listings and middlewares also by using this we have to write this line only)
 app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
 
