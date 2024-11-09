@@ -40,7 +40,7 @@ module.exports.createListing = async (req, res, next) => {
     }
   );
   const { lat, lng } = response.data.items[0].position;
-  const coorDinates = { type: "Point", coordinates: [lat, lng] }; // Log the
+  const coorDinates = { type: "Point", coordinates: [lat, lng] };
   let url = req.file.path;
   let filename = req.file.filename;
   const newListing = new Listing(req.body.listing);
